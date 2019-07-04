@@ -23,7 +23,7 @@ function randomHole(holes){
 }
 
 function peep() {
-    const time = randomTime(200, 1000); //get a random time to determine how long mole should peep
+    const time = randomTime(500, 1000); //get a random time to determine how long mole should peep
     const hole = randomHole(holes); //get the random hole from the randomHole function
     hole.classList.add('up'); //add the CSS class so selected mole can "pop up"
     setTimeout(() => {
@@ -39,7 +39,7 @@ function startGame() {
     timeUp = false;
     score = 0;
     peep();
-    setTimeout(() => timeUp = true, 10000) //show random moles for 10 seconds
+    setTimeout(() => timeUp = true, 15000) //show random moles for 15 seconds
 }
 
 function wack(e){

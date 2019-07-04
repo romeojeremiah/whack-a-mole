@@ -73,3 +73,80 @@ button{
     margin-left: 20px;
     margin-top: 90px;
 }
+
+@media (min-width: 667px) and (max-width: 1024px){
+    
+    h1 {
+        display: none;
+    }
+    .score{
+    width:75px;
+    font-size: 35px;
+    height: 40px;
+    color: #fff;
+    background-color: blue;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 90px;
+    }  
+
+    .hole.up .mole{
+        top:17px;
+    }
+}
+
+@media (max-width: 667px){
+
+    .game {
+        width: 667px;
+        height: 300px;
+        display:flex;
+        flex-wrap:wrap;
+        margin: 0 auto;
+    }
+
+    .score{
+        width:35px;
+        font-size: 15px;
+        height: 40px;
+        color: #fff;
+        background-color: blue;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+        padding: 5px;
+        }
+
+        button{
+            margin: 10px 10px 10px 10px;
+            height: 40px;
+            width: 75px;
+            font-size: 15px;
+        }
+
+    .hole:after{
+        display:block;
+        background: url(dirt.png) bottom center no-repeat;
+        background-size:contain;
+        content: '';
+        max-width: 70%;
+        height: 60px;
+        position: absolute;
+        z-index: 2;
+        bottom: -30px;
+    }
+
+    .mole {
+        background: url('mole.png') bottom center no-repeat;
+        background-size: 60%;
+        position: absolute;
+        top: 100%;
+        max-width: 70%;
+        height: 70%;
+        transition: all 0.4s;
+    }
+
+    .hole.up .mole{
+        top:50px;
+    }
+}
