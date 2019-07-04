@@ -1,5 +1,5 @@
 html {
-    font-size: 10px;
+    font-size: 35px;
     background: #98BCF4;
 }
 
@@ -21,6 +21,7 @@ h1 {
     line-height: 1;
     border-radius: 16px;
     color: #fff;
+    margin-left: 15px;
 }
 
 .game {
@@ -79,16 +80,15 @@ button{
     h1 {
         display: none;
     }
-    .score{
-    width:75px;
-    font-size: 35px;
-    height: 40px;
+    .score {
+    background:blue;
+    padding: 0 12px;
+    line-height: 1;
+    border-radius: 16px;
     color: #fff;
-    background-color: blue;
-    border-radius: 10px;
+    font-size: 40px;
     margin-left: 20px;
-    margin-top: 90px;
-    }  
+}
 
     .hole.up .mole{
         top:17px;
